@@ -5,62 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet AVA</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #6200ea;
-            color: white;
-            padding: 1em 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
             text-align: center;
         }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1.5em 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Main Section */
         main {
             padding: 2em;
+            max-width: 700px;
+            margin: auto;
         }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Buttons */
         .btn {
             display: inline-block;
-            padding: 0.5em 1em;
-            background: #6200ea;
+            padding: 0.8em 1.5em;
+            background: #ff5722;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0.5em 0;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-        .footer-links {
-            margin-top: 1em;
-        }
-        .footer-link {
-            display: inline-block;
-            margin: 0.5em;
-            padding: 0.5em 1em;
-            background: #6200ea;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .social-links {
-            text-align: center;
-            margin-top: 1.5em;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #6200ea;
             text-decoration: none;
             font-weight: bold;
+            border-radius: 8px;
+            margin-top: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background: #e64a19;
+            transform: scale(1.05);
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 2em;
+        }
+        .social-links h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
         .social-links a:hover {
-            text-decoration: underline;
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1.5em 0;
+            margin-top: 2em;
+            font-size: 0.9em;
+        }
+        .footer-links a {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .footer-links a:hover {
+            background: rgba(255, 255, 255, 0.4);
         }
     </style>
 </head>
@@ -69,17 +116,20 @@
         <h1>Welcome to AVA's World</h1>
         <p>Your reliable AI companion</p>
     </header>
+
     <main>
         <h2>About AVA</h2>
-        <p>AVA (Artificial Voice Assistance bot) is designed to help you with tasks, answer your questions, and be a companion in your digital journey.</p>
+        <p>AVA (Artificial Virtual Assistant) is designed to help you with tasks, answer your questions, and be a companion in your digital journey.</p>
         <a href="#" class="btn">Try AVA Now</a>
     </main>
+
     <div class="social-links">
         <h2>Connect with Us</h2>
         <a href="https://www.tiktok.com/@diamond_heartz" target="_blank">TikTok</a>
         <a href="https://www.instagram.com/diamond_heartz6" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61570107387087"target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=61570107387087" target="_blank">Facebook</a>
     </div>
+
     <footer>
         <p>© 2024 AVA. All rights reserved.</p>
         <div class="footer-links">
